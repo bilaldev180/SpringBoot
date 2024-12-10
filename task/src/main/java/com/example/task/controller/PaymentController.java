@@ -1,5 +1,6 @@
 package com.example.task.controller;
 
+import com.example.task.model.paymentResponse;
 import com.example.task.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +26,7 @@ public class PaymentController {
 //    }
 
     @GetMapping ("/payment")
-    public String paymentProcess(@RequestParam String method){
+    public paymentResponse paymentProcess(@RequestParam String method){
         return service.getPaymentMethod(method);
     }
 }

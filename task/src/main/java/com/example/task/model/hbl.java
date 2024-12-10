@@ -9,7 +9,7 @@ public class hbl implements Bank{
     private static final double AMOUNT = 100;
 
     @Override
-    public String paymentDetails() {
-        return "hbL"+ TID + " "  + "Currency:"+CURRENCY +" " + "Amount:" +AMOUNT;
+    public paymentResponse paymentDetails() {
+    return new paymentResponse(CURRENCY,TID, AMOUNT);
     }
 }

@@ -11,8 +11,8 @@ public class UBL implements Bank {
 
 
     @Override
-    public String paymentDetails()
+    public paymentResponse paymentDetails()
     {
-        return "UBL"+ TID + " "  + "Currency:"+CURRENCY +" " + "Amount:" +AMOUNT;
+        return new paymentResponse(CURRENCY,TID,AMOUNT);
     }
 }

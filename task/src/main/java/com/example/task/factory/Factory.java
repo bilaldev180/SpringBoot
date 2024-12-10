@@ -16,7 +16,7 @@ public class Factory {
     public Bank getBank(String method){
         Bank bank = bankMap.get(method.toLowerCase());
         if (bank == null){
-            throw new IllegalArgumentException("there is no such method");
+            throw new RuntimeException ("there is no such method");
         }
         return bank;
     }

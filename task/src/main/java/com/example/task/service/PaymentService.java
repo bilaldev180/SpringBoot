@@ -3,6 +3,7 @@ package com.example.task.service;
 import com.example.task.factory.Factory;
 import com.example.task.model.Paypal;
 import com.example.task.model.Stripe;
+import com.example.task.model.paymentResponse;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -29,7 +30,7 @@ public class PaymentService {
         this.factory = factory;
     }
 
-    public String getPaymentMethod(String method) {
+    public paymentResponse getPaymentMethod(String method) {
 //        if ("paypal".equals(method)){
 //            return paypal.getPaymentDetails();
 //        } else if ("stripe".equals(method)) {
