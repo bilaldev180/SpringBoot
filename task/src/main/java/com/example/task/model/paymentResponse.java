@@ -1,37 +1,37 @@
 package com.example.task.model;
 
 public class paymentResponse {
-    private String CURRENCY;
-    private int TID ;
-    private double AMOUNT;
+    private String currencyCode;
+    private int transactionId ;
+    private double transaction;
 
-    public paymentResponse(String CURRENCY, int TID, double AMOUNT) {
-        this.CURRENCY = CURRENCY;
-        this.TID = TID;
-        this.AMOUNT = AMOUNT;
+    public paymentResponse(String currencyCode, int transactionId, double transaction) {
+        this.currencyCode = currencyCode;
+        this.transactionId = transactionId;
+        this.transaction = transaction;
     }
 
-    public String getCURRENCY() {
-        return CURRENCY;
+    public String getCurrencyCode() {
+        return currencyCode;
     }
 
-    public int getTID() {
-        return TID;
+    public int getTransactionId() {
+        return transactionId;
     }
 
-    public double getAMOUNT() {
-        return AMOUNT;
+    public double getTransaction() {
+        return transaction;
     }
 
-    public void setCURRENCY(String CURRENCY) {
-        this.CURRENCY = CURRENCY;
+    public void setCurrencyCode(String currencyCode) {
+        this.currencyCode = currencyCode;
     }
 
-    public void setTID(int TID) {
-        this.TID = TID;
+    public void setTransactionId(int transactionId) {
+        this.transactionId = transactionId;
     }
 
-    public void setAMOUNT(int AMOUNT) {
-        this.AMOUNT = AMOUNT;
+    public void setTransaction(double transaction) {
+        this.transaction = transaction;
     }
 }

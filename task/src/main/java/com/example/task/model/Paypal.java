@@ -4,19 +4,23 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Paypal implements Bank {
-    private static final String CURRENCY = "$";
-    private static final int TID = 20;
-    private static final double AMOUNT = 100;
 
-//    public String getPaymentDetails() {
+    //dto data transfer object
+    @Override
+    public paymentResponse paymentDetails() {
+        PaypalResponse res= api();
+
+        return new paymentResponse(res.getPaypalCURRENCY(), res.getPaypalTID(), res.getPaypalAMOUNT());
+    }
+
+    private PaypalResponse api (){
+        return new PaypalResponse();
+    }
+
+    //    public String getPaymentDetails() {
 //        return "paypal:"+ TID + " "  + "Currency:"+CURRENCY +" " + "Amount:" +AMOUNT;
 //    }
 
-    @Override
-    public paymentResponse paymentDetails() {
-        return new paymentResponse(CURRENCY, TID, AMOUNT);
-    }
-
-    //dtu data transfer object
 
 }
+

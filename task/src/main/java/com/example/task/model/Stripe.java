@@ -40,19 +40,19 @@ import org.springframework.stereotype.Component;
 //    }
 //}
 
-@Component
-public class Stripe implements Bank {
-
-    private static final String CURRENCY = "AED";
-    private static final int TID = 20;
-    private static final double AMOUNT = 1000.0/100;
-
-//    public String getPaymentDetails() {
-//        return "stripe"+ TID + " "  + "Currency:"+CURRENCY +" " + "Amount:" +AMOUNT;
+//@Component
+//public class Stripe implements Bank {
+//
+//    private static final String CURRENCY = "AED";
+//    private static final int TID = 20;
+//    private static final double AMOUNT = 1000.0/100;
+//
+////    public String getPaymentDetails() {
+////        return "stripe"+ TID + " "  + "Currency:"+CURRENCY +" " + "Amount:" +AMOUNT;
+////    }
+//
+//    @Override
+//    public paymentResponse paymentDetails() {
+//        return new paymentResponse(CURRENCY,TID,AMOUNT);
 //    }
-
-    @Override
-    public paymentResponse paymentDetails() {
-        return new paymentResponse(CURRENCY,TID,AMOUNT);
-    }
-}
+//}
