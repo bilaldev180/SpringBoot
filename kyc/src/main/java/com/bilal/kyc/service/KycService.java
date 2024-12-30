@@ -43,8 +43,7 @@ public class KycService {
 
     public KycResponse getKycLevelById(int id) {
              KycLevel findById =  kycRepo.findById(id).orElseThrow(() -> new EntityNotFoundException("ID not found" + id));
-        return kycLevelMapper.mapToResponse(findByIdgit --version
-        );
+        return kycLevelMapper.mapToResponse(findById);
     }
 
 
