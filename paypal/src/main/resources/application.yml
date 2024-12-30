@@ -1,0 +1,6 @@
+#spring.application.name=paypal
+
+paypal:
+  client-id: AYfdZn6NJZAdaLQ-bEL6eFPFzSok5s172Tv_xzzfVB-hX8NARUU0-F4T8izK8NW6pTinQnkB6mcOSCky
+  client-secret: EKCUs36zDsKku2KvmdSSMMmeo47TRxoR5BjmxmooeXeHBQgsO6wvjD7qFHbDP62ZaX_BxkAyDUj16adq
+  mode: sandbox
