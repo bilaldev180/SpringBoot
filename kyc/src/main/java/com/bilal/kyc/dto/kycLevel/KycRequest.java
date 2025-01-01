@@ -1,4 +1,4 @@
-package com.bilal.kyc.dto.requests.kyc_level;
+package com.bilal.kyc.dto.kycLevel;
 
 import com.bilal.kyc.enums.KycLevelName;
 import jakarta.persistence.Enumerated;

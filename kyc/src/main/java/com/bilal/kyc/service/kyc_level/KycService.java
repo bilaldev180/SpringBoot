@@ -1,11 +1,11 @@
-package com.bilal.kyc.service;
-import com.bilal.kyc.dto.KycLevelUpdateReqDto;
-import com.bilal.kyc.dto.KycResponse;
-import com.bilal.kyc.dto.requests.kyc_level.KycLevelMapper;
-import com.bilal.kyc.dto.requests.kyc_level.KycRequest;
+package com.bilal.kyc.service.kyc_level;
+import com.bilal.kyc.dto.kycLevel.KycLevelUpdateReqDto;
+import com.bilal.kyc.dto.kycLevel.KycResponse;
+import com.bilal.kyc.dto.kycLevel.KycLevelMapper;
+import com.bilal.kyc.dto.kycLevel.KycRequest;
 import com.bilal.kyc.enums.KycLevelName;
-import com.bilal.kyc.model.KycLevel;
-import com.bilal.kyc.repo.KycRepo;
+import com.bilal.kyc.model.kyc_level.KycLevel;
+import com.bilal.kyc.repo.kyc_level.KycRepo;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
@@ -46,7 +46,6 @@ public class KycService {
         return kycLevelMapper.mapToResponse(findById);
     }
 
-
     public void deleteKycLevel(Integer id) {
         kycRepo.deleteById(id);
     }
@@ -56,7 +55,7 @@ public class KycService {
         KycLevelName kycLevelName = kycLevelUpdateReqDto.getKycLevelName();
         Integer kycLevelId = kycLevelUpdateReqDto.getId();
         Integer sequence = kycLevelUpdateReqDto.getSequence();
-        LocalDateTime createAt = kycLevelUpdateReqDto.getCreatedAt();
+//        LocalDateTime createAt = kycLevelUpdateReqDto.getCreatedAt();
 
 
 

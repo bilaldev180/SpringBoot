@@ -1,7 +1,6 @@
-package com.bilal.kyc.dto.requests.kyc_level;
+package com.bilal.kyc.dto.kycLevel;
 
-import com.bilal.kyc.dto.KycResponse;
-import com.bilal.kyc.model.KycLevel;
+import com.bilal.kyc.model.kyc_level.KycLevel;
 import org.springframework.stereotype.Component;
 
 @Component

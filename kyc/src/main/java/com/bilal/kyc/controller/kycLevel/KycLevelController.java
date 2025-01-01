@@ -1,10 +1,10 @@
-package com.bilal.kyc.controller;
+package com.bilal.kyc.controller.kycLevel;
 
-import com.bilal.kyc.dto.KycLevelUpdateReqDto;
-import com.bilal.kyc.dto.KycResponse;
-import com.bilal.kyc.dto.requests.kyc_level.KycRequest;
-import com.bilal.kyc.model.KycLevel;
-import com.bilal.kyc.service.KycService;
+import com.bilal.kyc.dto.kycLevel.KycLevelUpdateReqDto;
+import com.bilal.kyc.dto.kycLevel.KycResponse;
+import com.bilal.kyc.dto.kycLevel.KycRequest;
+import com.bilal.kyc.model.kyc_level.KycLevel;
+import com.bilal.kyc.service.kyc_level.KycService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
